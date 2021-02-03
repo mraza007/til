@@ -1,3 +1,6 @@
+# TIL (Things I discover Linux/Programming/Automation)
+
+
 xargs -n 1 curl -sL < 2018.txt | grep -Eo "<title>.*</title>" The command to extract links using curl
 
 curl -sL https://news.ycombinator.com/item\?id\=18740939 | grep -Eo 'href="(https|http):[^\"]+"' Command to extract the links from hackernews
