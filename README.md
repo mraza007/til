@@ -19,3 +19,15 @@ In order to delete a branch on git locally you can use `git branch --delete <bra
 
 ## 2021-02-04
 - We can use this command to generate a `grub` configuration file, `sudo grub-mkconfig -o /boot/grub/grub.cfg`,As, `grub-mkconfig` scans hardrives for bootable operating systems such as windows,mac or linux distros
+
+## 2021-02-11
+
+To open workspaces on specific windows when using `i3` window mananger use the following `assign [class="<use your program name here e.g. - Firefox>"] $workspace<eg. 5>` and refresh `i3-msg reload`
+
+## 2021-02-12
+
+In order to resize images using command you can use the `convert` command. `convert img.jpg -resize 200x200 img-1.jpg` and you can also convert to different extenstions using `convert` command. `convert img.png img.jpg`
+
+## 2021-02-19
+
+`fuser -k <port_name>/tcp` use `fuser` to kill specific ports on linux  
