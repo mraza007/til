@@ -30,4 +30,8 @@ In order to resize images using command you can use the `convert` command. `conv
 
 ## 2021-02-19
 
-`fuser -k <port_name>/tcp` use `fuser` to kill specific ports on linux  
+`fuser -k <port_name>/tcp` use `fuser` to kill specific ports on linux
+
+jinja line break `{% autoescape false %} {{ org.backgroundInfo | replace(‘\n’, ‘<br>’) }} {% endautoescape %}`
+
+In order to save a file with root permission using vim you can do `:w !sudo tee %`  
