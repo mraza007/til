@@ -28,6 +28,9 @@ To open workspaces on specific windows when using `i3` window mananger use the f
 
 In order to resize images using command you can use the `convert` command. `convert img.jpg -resize 200x200 img-1.jpg` and you can also convert to different extenstions using `convert` command. `convert img.png img.jpg`
 
+
+## 2021-02-27
+- To add a printer on linux use `CUPS` web admin `http://localhost:631/`
 ## 2021-02-19
 
 `fuser -k <port_name>/tcp` use `fuser` to kill specific ports on linux
