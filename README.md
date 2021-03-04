@@ -38,3 +38,5 @@ In order to resize images using command you can use the `convert` command. `conv
 jinja line break `{% autoescape false %} {{ org.backgroundInfo | replace(‘\n’, ‘<br>’) }} {% endautoescape %}`
 
 In order to save a file with root permission using vim you can do `:w !sudo tee %`  
+
+This commands `sudo netstat -plunt |grep post` outputs the port on which postgres db is running on
