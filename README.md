@@ -5,7 +5,7 @@ xargs -n 1 curl -sL < 2018.txt | grep -Eo "<title>.*</title>" The command to ext
 
 curl -sL https://news.ycombinator.com/item\?id\=18740939 | grep -Eo 'href="(https|http):[^\"]+"' Command to extract the links from hackernews
 
-grep -aEo "<title>.*</title>" -a option process binary file https://unix.stackexchange.com/questions/335716/grep-returns-binary-file-standard-input-matches-when-trying-to-find-a-string
+grep -aEo "<title>.*</title>" -a option process binary file [link to sol](https://unix.stackexchange.com/questions/335716/grep-returns-binary-file-standard-input-matches-when-trying-to-find-a-string)
 
 use ``` backticks to run a command in bash
 
@@ -40,3 +40,7 @@ jinja line break `{% autoescape false %} {{ org.backgroundInfo | replace(â€˜\nâ€
 In order to save a file with root permission using vim you can do `:w !sudo tee %`  
 
 This commands `sudo netstat -plunt |grep post` outputs the port on which postgres db is running on
+
+## 2021-03-20
+
+- `chmod -x` allows you to revert the executable created by `chmod +x`
