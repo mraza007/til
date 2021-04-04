@@ -44,3 +44,15 @@ This commands `sudo netstat -plunt |grep post` outputs the port on which postgre
 ## 2021-03-20
 
 - `chmod -x` allows you to revert the executable created by `chmod +x`
+
+## 2021-04-04
+
+To delete git commit history do the following
+- `git checkout --orphan <branch_name>`
+- `git add -A`
+- `git commit --all -m "a message"`
+- `git branch -D <delete the main branch>`
+- `git branch -m <rename the new branch to main branch>`
+- `git push -f origin <new branch>
+
+
