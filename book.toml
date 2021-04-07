@@ -1,0 +1,7 @@
+[book]
+authors = ["Muhammad"]
+language = "en"
+multilingual = false
+src = "src"
+title = "TIL (Linux, Programming, Automation)"
+git-repository-url = "https://github.com/mraza007/til"
