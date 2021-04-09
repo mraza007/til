@@ -12,6 +12,9 @@
 6. [Setting up printer using CUPS](./linux/linux-printer.md)
 7. [Killing port on Linux](./linux/kill-port.md)
 8. [Un Chmod](./linux/unchmod.md)
+10. [Enable Bluetooth on Linux](./linux/bluetooth.md) 
+
+
 
 # Vim
 - [Saving a file with root permissions](./vim/file-save.md)
