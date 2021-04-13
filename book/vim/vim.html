@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Counting files in directory - TIL (Linux, Programming, Automation)</title>
+        <title>Vim Commands - TIL (Linux, Programming, Automation)</title>
         
         
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Today I learned</li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="../linux/extracting-links.html"><strong aria-hidden="true">2.</strong> Extracting Links from HTML</a></li><li class="chapter-item expanded "><a href="../linux/count-files.html" class="active"><strong aria-hidden="true">3.</strong> Counting files in directory</a></li><li class="chapter-item expanded "><a href="../linux/generate-grub.html"><strong aria-hidden="true">4.</strong> Generating A Grub File</a></li><li class="chapter-item expanded "><a href="../linux/i3-workspaces.html"><strong aria-hidden="true">5.</strong> Assigning Programs to Workspaces</a></li><li class="chapter-item expanded "><a href="../linux/image-convert.html"><strong aria-hidden="true">6.</strong> Resize images on Commandline</a></li><li class="chapter-item expanded "><a href="../linux/linux-printer.html"><strong aria-hidden="true">7.</strong> Setting up printer using CUPS</a></li><li class="chapter-item expanded "><a href="../linux/kill-port.html"><strong aria-hidden="true">8.</strong> Killing port on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unchmod.html"><strong aria-hidden="true">9.</strong> Un Chmod</a></li><li class="chapter-item expanded "><a href="../linux/bluetooth.html"><strong aria-hidden="true">10.</strong> Enable Bluetooth on Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Vim</li><li class="chapter-item expanded "><a href="../vim/file-save.html"><strong aria-hidden="true">11.</strong> Saving a file with root permissions</a></li><li class="chapter-item expanded "><a href="../vim/vim.html"><strong aria-hidden="true">12.</strong> Vim Commands</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git-delete-branch.html"><strong aria-hidden="true">13.</strong> Deleting Git Branches Locally and Remotely</a></li><li class="chapter-item expanded "><a href="../git/git-delete-history.html"><strong aria-hidden="true">14.</strong> Deleting Git Commit History</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="../python/jinja.html"><strong aria-hidden="true">15.</strong> jinja line break</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Today I learned</li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="../linux/extracting-links.html"><strong aria-hidden="true">2.</strong> Extracting Links from HTML</a></li><li class="chapter-item expanded "><a href="../linux/count-files.html"><strong aria-hidden="true">3.</strong> Counting files in directory</a></li><li class="chapter-item expanded "><a href="../linux/generate-grub.html"><strong aria-hidden="true">4.</strong> Generating A Grub File</a></li><li class="chapter-item expanded "><a href="../linux/i3-workspaces.html"><strong aria-hidden="true">5.</strong> Assigning Programs to Workspaces</a></li><li class="chapter-item expanded "><a href="../linux/image-convert.html"><strong aria-hidden="true">6.</strong> Resize images on Commandline</a></li><li class="chapter-item expanded "><a href="../linux/linux-printer.html"><strong aria-hidden="true">7.</strong> Setting up printer using CUPS</a></li><li class="chapter-item expanded "><a href="../linux/kill-port.html"><strong aria-hidden="true">8.</strong> Killing port on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unchmod.html"><strong aria-hidden="true">9.</strong> Un Chmod</a></li><li class="chapter-item expanded "><a href="../linux/bluetooth.html"><strong aria-hidden="true">10.</strong> Enable Bluetooth on Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Vim</li><li class="chapter-item expanded "><a href="../vim/file-save.html"><strong aria-hidden="true">11.</strong> Saving a file with root permissions</a></li><li class="chapter-item expanded "><a href="../vim/vim.html" class="active"><strong aria-hidden="true">12.</strong> Vim Commands</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git-delete-branch.html"><strong aria-hidden="true">13.</strong> Deleting Git Branches Locally and Remotely</a></li><li class="chapter-item expanded "><a href="../git/git-delete-history.html"><strong aria-hidden="true">14.</strong> Deleting Git Commit History</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="../python/jinja.html"><strong aria-hidden="true">15.</strong> jinja line break</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -163,30 +163,85 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="counting-files-in-directory"><a class="header" href="#counting-files-in-directory">Counting files in directory</a></h1>
-<p>To count specific files in the directory you can use the following command </p>
-<pre><code class="language-sh">
-ls *.&lt;file_extension&gt; | wc -l
-
-</code></pre>
-<p>lets say if you want to see how many css files you have in a directory you might use this command as </p>
-<pre><code class="language-sh">
-ls *.css | wc -l
-
-</code></pre>
+                        <h2 id="vim-notes"><a class="header" href="#vim-notes">Vim Notes</a></h2>
+<p>These are learning notes when learning <code>vim key bindings</code></p>
+<h2 id="vim-has-three-modes"><a class="header" href="#vim-has-three-modes">Vim has three modes</a></h2>
+<ul>
+<li><code>INSERT</code> : You can use <code>i</code> for the insert mode</li>
+<li><code>VISUAL</code> : You can use <code>v</code> for visual mode.</li>
+<li><code>NORMAL MODE</code> : just press <code>ESC</code> to get into normal mode</li>
+</ul>
+<h2 id="basic-navigation"><a class="header" href="#basic-navigation">Basic Navigation</a></h2>
+<ul>
+<li>In order to get into insert mode use <code>i</code>.</li>
+<li><code>gg</code> takes you to the first line of the document.</li>
+<li><code>Shift-G</code> takes you to the last line of the document.</li>
+<li>You can also move to the specfic line by <code>&lt;line number&gt; G</code>.</li>
+<li>you can use <code>x</code> to delete a character.</li>
+<li>you can use <code>u</code> to undo a change.</li>
+<li>you can also specific the number of characters you want to delete <code>&lt;num of char&gt; x</code></li>
+<li>to delete a whole word use <code>dw</code>.</li>
+<li>to delete a line use <code>dd</code>.</li>
+<li>to number of lines use <code>&lt;num of lines&gt; dd</code>.</li>
+<li>to move one word at a time <code>w</code>.it goes to the beginning character of the word.</li>
+<li>to move using last character use <code>e</code>.</li>
+<li>to move number of words use <code>&lt;num of words&gt; w</code> for example <code>10 w</code> this moves 10 words.</li>
+<li>to move backward a word you can use <code>b</code>.</li>
+<li>to move number of words backward use <code>&lt;num of words&gt; b</code> <code>10 b</code>.</li>
+<li>use <code>0</code> to go to the beginning of the line.</li>
+<li>you use <code>p</code> to put a line to desired line number for example you can <code>dd</code> a line then <code>10 G</code> and then do <code>p</code> to put the line on line 10 </li>
+<li>You can replace a word or a character by using <code>r</code>.</li>
+<li><code>Change</code> to get into change command you can change words by using <code>ce</code> to  get the end of the word.</li>
+<li><code>c$</code> to change the entire line</li>
+<li>navigating using command <code>f</code>:(forward &lt;to_word&gt;) and uppercase does this in reverse. for example,<code>fe</code> will take to the character <strong>e</strong> and <code>Fe</code> will take you backward.</li>
+</ul>
+<h2 id="different-insert-modes"><a class="header" href="#different-insert-modes">Different Insert Modes.</a></h2>
+<ul>
+<li><code>A</code> takes to the end of the line and enters in to insert mode.</li>
+<li><code>a</code> takes you into insert mode.</li>
+<li><code>S</code> deletes the entire line and enters you into the insert mode.</li>
+<li><code>s</code> delete the character and enters you into the insert mode.</li>
+<li><code>o</code> enters you into the insert mode in the next line.</li>
+<li><code>O</code> enters you into the insert mode in the preceding line.</li>
+<li><code>C</code> deletes the character and enters you into the insert mode basically <code>$c</code></li>
+<li><code>d$</code> deletes everything from the cursor to the end of the line. You can use <code>D</code> to do the same thing.</li>
+</ul>
+<h2 id="yanking"><a class="header" href="#yanking">Yanking</a></h2>
+<p>Its the copy command in the vim editor</p>
+<ul>
+<li>to copy a word just use <code>yw</code> you can paste by using <code>p</code>.</li>
+<li><code>yy</code> to copy the entire line.</li>
+<li><code>y$</code> to copy from the cursor to the end of the line.</li>
+</ul>
+<h2 id="searching-through-the-codedoc"><a class="header" href="#searching-through-the-codedoc">Searching through the code/doc</a></h2>
+<ul>
+<li><code>/</code> search forward in the doc. then hit <code>n</code> to goto the next instance.</li>
+<li><code>?</code> searches backward in the doc.</li>
+</ul>
+<h2 id="replacing"><a class="header" href="#replacing">Replacing</a></h2>
+<ul>
+<li>You can <code>:%s/oldstring/newstring/g</code> to replace a word</li>
+<li>you can also give line numbers <code>1,2s/old/new/g</code></li>
+<li><code>:%s/old/new/gc</code> gives a prompt.</li>
+</ul>
+<h2 id="executing-a-command-in-vim"><a class="header" href="#executing-a-command-in-vim">Executing a command in vim</a></h2>
+<ul>
+<li><code>! &lt;cmd&gt;</code> to execute a command</li>
+<li><code>cntrl-d</code> to see what commands are available</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../linux/extracting-links.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../vim/file-save.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../linux/generate-grub.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../git/git-delete-branch.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -198,13 +253,13 @@ ls *.css | wc -l
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../linux/extracting-links.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../vim/file-save.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../linux/generate-grub.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../git/git-delete-branch.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Today I learned</li><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="../linux/extracting-links.html"><strong aria-hidden="true">2.</strong> Extracting Links from HTML</a></li><li class="chapter-item expanded "><a href="../linux/count-files.html"><strong aria-hidden="true">3.</strong> Counting files in directory</a></li><li class="chapter-item expanded "><a href="../linux/generate-grub.html"><strong aria-hidden="true">4.</strong> Generating A Grub File</a></li><li class="chapter-item expanded "><a href="../linux/i3-workspaces.html" class="active"><strong aria-hidden="true">5.</strong> Assigning Programs to Workspaces</a></li><li class="chapter-item expanded "><a href="../linux/image-convert.html"><strong aria-hidden="true">6.</strong> Resize images on Commandline</a></li><li class="chapter-item expanded "><a href="../linux/linux-printer.html"><strong aria-hidden="true">7.</strong> Setting up printer using CUPS</a></li><li class="chapter-item expanded "><a href="../linux/kill-port.html"><strong aria-hidden="true">8.</strong> Killing port on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unchmod.html"><strong aria-hidden="true">9.</strong> Un Chmod</a></li><li class="chapter-item expanded "><a href="../linux/bluetooth.html"><strong aria-hidden="true">10.</strong> Enable Bluetooth on Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Vim</li><li class="chapter-item expanded "><a href="../vim/file-save.html"><strong aria-hidden="true">11.</strong> Saving a file with root permissions</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git-delete-branch.html"><strong aria-hidden="true">12.</strong> Deleting Git Branches Locally and Remotely</a></li><li class="chapter-item expanded "><a href="../git/git-delete-history.html"><strong aria-hidden="true">13.</strong> Deleting Git Commit History</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="../python/jinja.html"><strong aria-hidden="true">14.</strong> jinja line break</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Today I learned</li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="../linux/extracting-links.html"><strong aria-hidden="true">2.</strong> Extracting Links from HTML</a></li><li class="chapter-item expanded "><a href="../linux/count-files.html"><strong aria-hidden="true">3.</strong> Counting files in directory</a></li><li class="chapter-item expanded "><a href="../linux/generate-grub.html"><strong aria-hidden="true">4.</strong> Generating A Grub File</a></li><li class="chapter-item expanded "><a href="../linux/i3-workspaces.html" class="active"><strong aria-hidden="true">5.</strong> Assigning Programs to Workspaces</a></li><li class="chapter-item expanded "><a href="../linux/image-convert.html"><strong aria-hidden="true">6.</strong> Resize images on Commandline</a></li><li class="chapter-item expanded "><a href="../linux/linux-printer.html"><strong aria-hidden="true">7.</strong> Setting up printer using CUPS</a></li><li class="chapter-item expanded "><a href="../linux/kill-port.html"><strong aria-hidden="true">8.</strong> Killing port on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unchmod.html"><strong aria-hidden="true">9.</strong> Un Chmod</a></li><li class="chapter-item expanded "><a href="../linux/bluetooth.html"><strong aria-hidden="true">10.</strong> Enable Bluetooth on Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Vim</li><li class="chapter-item expanded "><a href="../vim/file-save.html"><strong aria-hidden="true">11.</strong> Saving a file with root permissions</a></li><li class="chapter-item expanded "><a href="../vim/vim.html"><strong aria-hidden="true">12.</strong> Vim Commands</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git-delete-branch.html"><strong aria-hidden="true">13.</strong> Deleting Git Branches Locally and Remotely</a></li><li class="chapter-item expanded "><a href="../git/git-delete-history.html"><strong aria-hidden="true">14.</strong> Deleting Git Commit History</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="../python/jinja.html"><strong aria-hidden="true">15.</strong> jinja line break</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -205,6 +205,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
