@@ -251,6 +251,7 @@ and you can also convert to different extenstions using <code>convert</code> com
 <li><code>Change</code> to get into change command you can change words by using <code>ce</code> to  get the end of the word.</li>
 <li><code>c$</code> to change the entire line</li>
 <li>navigating using command <code>f</code>:(forward &lt;to_word&gt;) and uppercase does this in reverse. for example,<code>fe</code> will take to the character <strong>e</strong> and <code>Fe</code> will take you backward.</li>
+<li>to delete a specific line you can do <code>:&lt;line&gt;d</code></li>
 </ul>
 <h2 id="different-insert-modes"><a class="header" href="#different-insert-modes">Different Insert Modes.</a></h2>
 <ul>
@@ -260,7 +261,7 @@ and you can also convert to different extenstions using <code>convert</code> com
 <li><code>s</code> delete the character and enters you into the insert mode.</li>
 <li><code>o</code> enters you into the insert mode in the next line.</li>
 <li><code>O</code> enters you into the insert mode in the preceding line.</li>
-<li><code>C</code> deletes the character and enters you into the insert mode basically <code>$c</code></li>
+<li><code>C</code> deletes the entire line <code>c$</code> </li>
 <li><code>d$</code> deletes everything from the cursor to the end of the line. You can use <code>D</code> to do the same thing.</li>
 </ul>
 <h2 id="yanking"><a class="header" href="#yanking">Yanking</a></h2>
@@ -285,6 +286,39 @@ and you can also convert to different extenstions using <code>convert</code> com
 <ul>
 <li><code>! &lt;cmd&gt;</code> to execute a command</li>
 <li><code>cntrl-d</code> to see what commands are available</li>
+</ul>
+<p><em>note: you can enable vim mode in zsh by adding <code>bindkey -v</code> to zshrc</em></p>
+<h2 id="vim-macros"><a class="header" href="#vim-macros">VIM Macros</a></h2>
+<ul>
+<li>You can record vim macros by using the <code>q</code> key and followed whatever key you want to assign that macro to.</li>
+<li>to run the macro number of occurences and key where you saved the macro.</li>
+</ul>
+<h2 id="vim-splits"><a class="header" href="#vim-splits">Vim Splits</a></h2>
+<ul>
+<li><code>:split</code> does horizontal split <code>:sp</code></li>
+<li><code>:vsplit</code> does vertical split <code>:vs</code></li>
+<li><code>cntrl-w c</code>closes the split.</li>
+<li>you can also specific the height when doing a split <code>10sp &lt;filename&gt;</code></li>
+<li>you can do <code>cntrl-w R</code> to swap the split</li>
+<li><code>cntrl-w j</code> and <code>cntrl-w k</code> moves you up and down</li>
+<li><code>cntrl-w h</code> and <code>cntrl-w l</code> moves you left and right</li>
+<li>you can also resize the splits <code>vertical resize +5</code> or <code>resize +5</code> for horizontal split.</li>
+<li>you can also open terminal in vim. especially in split <code>:vs | :terminal</code></li>
+</ul>
+<h2 id="command-mode-in-vim"><a class="header" href="#command-mode-in-vim">Command Mode in Vim.</a></h2>
+<ul>
+<li>you can run shell commands in vim <code>:! ls</code> this will print the files of your directory.</li>
+<li>you can also read the outputs of the command and add it to the document <code>:read !date</code> </li>
+<li>you can also use ranges when replacing the text <code>11,16s/old/new/g</code></li>
+<li><code>:g/vim/d</code> this will delete vim from every line where it finds the word.</li>
+<li><code>!g/vim/d</code> this will delete that will delete that's not vim.</li>
+<li><code>g/^/pu/ =\&quot;\n\&quot;</code> puts spaces. </li>
+<li><code>g/&lt;word&gt;/m$</code> moves the lines containing that word to the end of the file</li>
+</ul>
+<h2 id="vim-tabs"><a class="header" href="#vim-tabs">Vim Tabs</a></h2>
+<ul>
+<li>You can edit a file in a new tab by <code>tabedit &lt;filename&gt;</code></li>
+<li>you can <code>gt</code>  to cycle through the tabs</li>
 </ul>
 <h1 id="deleting-git-branches-locally-and-remotely"><a class="header" href="#deleting-git-branches-locally-and-remotely">Deleting Git Branches Locally and Remotely</a></h1>
 <p>In order to delete a branch on git locally you can use <code>git branch --delete &lt;branchname&gt;</code> and if you want to do it remotely you can do </p>
@@ -326,21 +360,6 @@ and you can also convert to different extenstions using <code>convert</code> com
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

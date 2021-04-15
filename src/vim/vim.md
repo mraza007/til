@@ -32,6 +32,7 @@ These are learning notes when learning `vim key bindings`
 - `Change` to get into change command you can change words by using `ce` to  get the end of the word.
 - `c$` to change the entire line
 - navigating using command `f`:(forward <to_word>) and uppercase does this in reverse. for example,`fe` will take to the character **e** and `Fe` will take you backward.
+- to delete a specific line you can do `:<line>d`
 
 ## Different Insert Modes.
 
