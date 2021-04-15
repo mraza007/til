@@ -34,6 +34,7 @@ These are learning notes when learning `vim key bindings`
 - navigating using command `f`:(forward <to_word>) and uppercase does this in reverse. for example,`fe` will take to the character **e** and `Fe` will take you backward.
 - to delete a specific line you can do `:<line>d`
 
+
 ## Different Insert Modes.
 
 - `A` takes to the end of the line and enters in to insert mode.
@@ -44,6 +45,7 @@ These are learning notes when learning `vim key bindings`
 - `O` enters you into the insert mode in the preceding line.
 - `C` deletes the entire line `c$` 
 - `d$` deletes everything from the cursor to the end of the line. You can use `D` to do the same thing.
+
 
 
 ## Yanking
@@ -115,3 +117,7 @@ _note: you can enable vim mode in zsh by adding `bindkey -v` to zshrc_
 - `>` allows you to indent `111,114>`
 - `:{range} '<,'>' norm A"` adds `"` at the end of the line.
 - `:{range} '<,'>' norm I"` adds `"` at the beginning of the line.
+- `cgn` allows you to change the next instance when doing a search.
+- you can also set abbreviations `:ab rtfm Read The Friend Manual` and use `cntrl-v` if you don't want to expand it.
+
+
