@@ -18,7 +18,7 @@
 
 # Vim
 - [Saving a file with root permissions](./vim/file-save.md)
-- [Vim Commands](./vim/vim.md)
+- [Learning Vim Basics](./vim/vim.md)
 # Git
 - [Deleting Git Branches Locally and Remotely](./git/git-delete-branch.md)
 - [Deleting Git Commit History](./git/git-delete-history.md)

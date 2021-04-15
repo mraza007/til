@@ -54,6 +54,7 @@ Its the copy command in the vim editor
 - to copy a word just use `yw` you can paste by using `p`.
 - `yy` to copy the entire line.
 - `y$` to copy from the cursor to the end of the line.
+- `P` puts to the preceding line
 
 ## Searching through the code/doc
 
@@ -106,4 +107,11 @@ _note: you can enable vim mode in zsh by adding `bindkey -v` to zshrc_
 ## Vim Tabs
 
 - You can edit a file in a new tab by `tabedit <filename>`
-- you can `gt`  to cycle through the tabs
+- you can `gt`  to cycle through the tabs.
+
+## Few Notes
+- `ddp` allows you to swap a line.
+- `g/<word>/+1m-2`
+- `>` allows you to indent `111,114>`
+- `:{range} '<,'>' norm A"` adds `"` at the end of the line.
+- `:{range} '<,'>' norm I"` adds `"` at the beginning of the line.

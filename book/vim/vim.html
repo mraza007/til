@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Vim Commands - TIL (Linux, Programming, Automation)</title>
+        <title>Learning Vim Basics - TIL (Linux, Programming, Automation)</title>
         
         
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Today I learned</li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="../linux/extracting-links.html"><strong aria-hidden="true">2.</strong> Extracting Links from HTML</a></li><li class="chapter-item expanded "><a href="../linux/count-files.html"><strong aria-hidden="true">3.</strong> Counting files in directory</a></li><li class="chapter-item expanded "><a href="../linux/generate-grub.html"><strong aria-hidden="true">4.</strong> Generating A Grub File</a></li><li class="chapter-item expanded "><a href="../linux/i3-workspaces.html"><strong aria-hidden="true">5.</strong> Assigning Programs to Workspaces</a></li><li class="chapter-item expanded "><a href="../linux/image-convert.html"><strong aria-hidden="true">6.</strong> Resize images on Commandline</a></li><li class="chapter-item expanded "><a href="../linux/linux-printer.html"><strong aria-hidden="true">7.</strong> Setting up printer using CUPS</a></li><li class="chapter-item expanded "><a href="../linux/kill-port.html"><strong aria-hidden="true">8.</strong> Killing port on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unchmod.html"><strong aria-hidden="true">9.</strong> Un Chmod</a></li><li class="chapter-item expanded "><a href="../linux/bluetooth.html"><strong aria-hidden="true">10.</strong> Enable Bluetooth on Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Vim</li><li class="chapter-item expanded "><a href="../vim/file-save.html"><strong aria-hidden="true">11.</strong> Saving a file with root permissions</a></li><li class="chapter-item expanded "><a href="../vim/vim.html" class="active"><strong aria-hidden="true">12.</strong> Vim Commands</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git-delete-branch.html"><strong aria-hidden="true">13.</strong> Deleting Git Branches Locally and Remotely</a></li><li class="chapter-item expanded "><a href="../git/git-delete-history.html"><strong aria-hidden="true">14.</strong> Deleting Git Commit History</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="../python/jinja.html"><strong aria-hidden="true">15.</strong> jinja line break</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Today I learned</li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="../linux/extracting-links.html"><strong aria-hidden="true">2.</strong> Extracting Links from HTML</a></li><li class="chapter-item expanded "><a href="../linux/count-files.html"><strong aria-hidden="true">3.</strong> Counting files in directory</a></li><li class="chapter-item expanded "><a href="../linux/generate-grub.html"><strong aria-hidden="true">4.</strong> Generating A Grub File</a></li><li class="chapter-item expanded "><a href="../linux/i3-workspaces.html"><strong aria-hidden="true">5.</strong> Assigning Programs to Workspaces</a></li><li class="chapter-item expanded "><a href="../linux/image-convert.html"><strong aria-hidden="true">6.</strong> Resize images on Commandline</a></li><li class="chapter-item expanded "><a href="../linux/linux-printer.html"><strong aria-hidden="true">7.</strong> Setting up printer using CUPS</a></li><li class="chapter-item expanded "><a href="../linux/kill-port.html"><strong aria-hidden="true">8.</strong> Killing port on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unchmod.html"><strong aria-hidden="true">9.</strong> Un Chmod</a></li><li class="chapter-item expanded "><a href="../linux/bluetooth.html"><strong aria-hidden="true">10.</strong> Enable Bluetooth on Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Vim</li><li class="chapter-item expanded "><a href="../vim/file-save.html"><strong aria-hidden="true">11.</strong> Saving a file with root permissions</a></li><li class="chapter-item expanded "><a href="../vim/vim.html" class="active"><strong aria-hidden="true">12.</strong> Learning Vim Basics</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git-delete-branch.html"><strong aria-hidden="true">13.</strong> Deleting Git Branches Locally and Remotely</a></li><li class="chapter-item expanded "><a href="../git/git-delete-history.html"><strong aria-hidden="true">14.</strong> Deleting Git Commit History</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="../python/jinja.html"><strong aria-hidden="true">15.</strong> jinja line break</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -213,6 +213,7 @@
 <li>to copy a word just use <code>yw</code> you can paste by using <code>p</code>.</li>
 <li><code>yy</code> to copy the entire line.</li>
 <li><code>y$</code> to copy from the cursor to the end of the line.</li>
+<li><code>P</code> puts to the preceding line</li>
 </ul>
 <h2 id="searching-through-the-codedoc"><a class="header" href="#searching-through-the-codedoc">Searching through the code/doc</a></h2>
 <ul>
@@ -261,7 +262,15 @@
 <h2 id="vim-tabs"><a class="header" href="#vim-tabs">Vim Tabs</a></h2>
 <ul>
 <li>You can edit a file in a new tab by <code>tabedit &lt;filename&gt;</code></li>
-<li>you can <code>gt</code>  to cycle through the tabs</li>
+<li>you can <code>gt</code>  to cycle through the tabs.</li>
+</ul>
+<h2 id="few-notes"><a class="header" href="#few-notes">Few Notes</a></h2>
+<ul>
+<li><code>ddp</code> allows you to swap a line.</li>
+<li><code>g/&lt;word&gt;/+1m-2</code></li>
+<li><code>&gt;</code> allows you to indent <code>111,114&gt;</code></li>
+<li><code>:{range} '&lt;,'&gt;' norm A&quot;</code> adds <code>&quot;</code> at the end of the line.</li>
+<li><code>:{range} '&lt;,'&gt;' norm I&quot;</code> adds <code>&quot;</code> at the beginning of the line.</li>
 </ul>
 
                     </main>
