@@ -90,3 +90,19 @@ _note: you can enable vim mode in zsh by adding `bindkey -v` to zshrc_
 - `cntrl-w h` and `cntrl-w l` moves you left and right
 - you can also resize the splits `vertical resize +5` or `resize +5` for horizontal split.
 - you can also open terminal in vim. especially in split `:vs | :terminal`
+
+## Command Mode in Vim.
+
+- you can run shell commands in vim `:! ls` this will print the files of your directory.
+- you can also read the outputs of the command and add it to the document `:read !date` 
+- you can also use ranges when replacing the text `11,16s/old/new/g`
+- `:g/vim/d` this will delete vim from every line where it finds the word.
+- `!g/vim/d` this will delete that will delete that's not vim.
+- `g/^/pu/ =\"\n\"` puts spaces. 
+- `g/<word>/m$` moves the lines containing that word to the end of the file
+
+
+## Vim Tabs
+
+- You can edit a file in a new tab by `tabedit <filename>`
+- you can `gt`  to cycle through the tabs
