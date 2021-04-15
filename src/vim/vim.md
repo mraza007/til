@@ -7,7 +7,9 @@ These are learning notes when learning `vim key bindings`
 - `VISUAL` : You can use `v` for visual mode.
 - `NORMAL MODE` : just press `ESC` to get into normal mode
 
+
 ## Basic Navigation
+
 
 - In order to get into insert mode use `i`.
 - `gg` takes you to the first line of the document.
@@ -39,10 +41,12 @@ These are learning notes when learning `vim key bindings`
 - `s` delete the character and enters you into the insert mode.
 - `o` enters you into the insert mode in the next line.
 - `O` enters you into the insert mode in the preceding line.
-- `C` deletes the character and enters you into the insert mode basically `$c`
+- `C` deletes the entire line `c$` 
 - `d$` deletes everything from the cursor to the end of the line. You can use `D` to do the same thing.
 
+
 ## Yanking
+
 
 Its the copy command in the vim editor
 
@@ -55,7 +59,9 @@ Its the copy command in the vim editor
 - `/` search forward in the doc. then hit `n` to goto the next instance.
 - `?` searches backward in the doc.
 
+
 ## Replacing
+
 
 - You can `:%s/oldstring/newstring/g` to replace a word
 - you can also give line numbers `1,2s/old/new/g`
@@ -64,3 +70,23 @@ Its the copy command in the vim editor
 ## Executing a command in vim
 - `! <cmd>` to execute a command
 - `cntrl-d` to see what commands are available
+
+_note: you can enable vim mode in zsh by adding `bindkey -v` to zshrc_
+
+
+## VIM Macros
+
+- You can record vim macros by using the `q` key and followed whatever key you want to assign that macro to.
+- to run the macro number of occurences and key where you saved the macro.
+
+## Vim Splits
+
+- `:split` does horizontal split `:sp`
+- `:vsplit` does vertical split `:vs`
+- `cntrl-w c`closes the split.
+- you can also specific the height when doing a split `10sp <filename>`
+- you can do `cntrl-w R` to swap the split
+- `cntrl-w j` and `cntrl-w k` moves you up and down
+- `cntrl-w h` and `cntrl-w l` moves you left and right
+- you can also resize the splits `vertical resize +5` or `resize +5` for horizontal split.
+- you can also open terminal in vim. especially in split `:vs | :terminal`
