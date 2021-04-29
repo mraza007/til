@@ -119,5 +119,6 @@ _note: you can enable vim mode in zsh by adding `bindkey -v` to zshrc_
 - `:{range} '<,'>' norm I"` adds `"` at the beginning of the line.
 - `cgn` allows you to change the next instance when doing a search.
 - you can also set abbreviations `:ab rtfm Read The Friend Manual` and use `cntrl-v` if you don't want to expand it.
+- Read commandline commands into vim `:r !ls`
 
 
