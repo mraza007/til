@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>jinja line break - TIL (Linux, Programming, Automation)</title>
+        <title>Unzip files on Linux - TIL (Linux, Programming, Automation)</title>
                 
 
         <!-- Custom HTML head -->
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Today I learned</li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="../linux/extracting-links.html"><strong aria-hidden="true">2.</strong> Extracting Links from HTML</a></li><li class="chapter-item expanded "><a href="../linux/count-files.html"><strong aria-hidden="true">3.</strong> Counting files in directory</a></li><li class="chapter-item expanded "><a href="../linux/generate-grub.html"><strong aria-hidden="true">4.</strong> Generating A Grub File</a></li><li class="chapter-item expanded "><a href="../linux/i3-workspaces.html"><strong aria-hidden="true">5.</strong> Assigning Programs to Workspaces</a></li><li class="chapter-item expanded "><a href="../linux/image-convert.html"><strong aria-hidden="true">6.</strong> Resize images on Commandline</a></li><li class="chapter-item expanded "><a href="../linux/linux-printer.html"><strong aria-hidden="true">7.</strong> Setting up printer using CUPS</a></li><li class="chapter-item expanded "><a href="../linux/kill-port.html"><strong aria-hidden="true">8.</strong> Killing port on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unchmod.html"><strong aria-hidden="true">9.</strong> Un Chmod</a></li><li class="chapter-item expanded "><a href="../linux/bluetooth.html"><strong aria-hidden="true">10.</strong> Enable Bluetooth on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unzip.html"><strong aria-hidden="true">11.</strong> Unzip files on Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Vim</li><li class="chapter-item expanded "><a href="../vim/file-save.html"><strong aria-hidden="true">12.</strong> Saving a file with root permissions</a></li><li class="chapter-item expanded "><a href="../vim/vim.html"><strong aria-hidden="true">13.</strong> Learning Vim Basics</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git-delete-branch.html"><strong aria-hidden="true">14.</strong> Deleting Git Branches Locally and Remotely</a></li><li class="chapter-item expanded "><a href="../git/git-delete-history.html"><strong aria-hidden="true">15.</strong> Deleting Git Commit History</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="../python/jinja.html" class="active"><strong aria-hidden="true">16.</strong> jinja line break</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Today I learned</li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded "><a href="../linux/extracting-links.html"><strong aria-hidden="true">2.</strong> Extracting Links from HTML</a></li><li class="chapter-item expanded "><a href="../linux/count-files.html"><strong aria-hidden="true">3.</strong> Counting files in directory</a></li><li class="chapter-item expanded "><a href="../linux/generate-grub.html"><strong aria-hidden="true">4.</strong> Generating A Grub File</a></li><li class="chapter-item expanded "><a href="../linux/i3-workspaces.html"><strong aria-hidden="true">5.</strong> Assigning Programs to Workspaces</a></li><li class="chapter-item expanded "><a href="../linux/image-convert.html"><strong aria-hidden="true">6.</strong> Resize images on Commandline</a></li><li class="chapter-item expanded "><a href="../linux/linux-printer.html"><strong aria-hidden="true">7.</strong> Setting up printer using CUPS</a></li><li class="chapter-item expanded "><a href="../linux/kill-port.html"><strong aria-hidden="true">8.</strong> Killing port on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unchmod.html"><strong aria-hidden="true">9.</strong> Un Chmod</a></li><li class="chapter-item expanded "><a href="../linux/bluetooth.html"><strong aria-hidden="true">10.</strong> Enable Bluetooth on Linux</a></li><li class="chapter-item expanded "><a href="../linux/unzip.html" class="active"><strong aria-hidden="true">11.</strong> Unzip files on Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Vim</li><li class="chapter-item expanded "><a href="../vim/file-save.html"><strong aria-hidden="true">12.</strong> Saving a file with root permissions</a></li><li class="chapter-item expanded "><a href="../vim/vim.html"><strong aria-hidden="true">13.</strong> Learning Vim Basics</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git-delete-branch.html"><strong aria-hidden="true">14.</strong> Deleting Git Branches Locally and Remotely</a></li><li class="chapter-item expanded "><a href="../git/git-delete-history.html"><strong aria-hidden="true">15.</strong> Deleting Git Commit History</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="../python/jinja.html"><strong aria-hidden="true">16.</strong> jinja line break</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -143,9 +143,9 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="jinja-line-break"><a class="header" href="#jinja-line-break">jinja line break</a></h1>
-<pre><code class="language-jinja">
-{% autoescape false %} {{ org.backgroundInfo | replace(‘\n’, ‘&lt;br&gt;’) }} {% endautoescape %}
+                        <h2 id="unzip-files-in-linux"><a class="header" href="#unzip-files-in-linux">Unzip files in Linux</a></h2>
+<p>You can unzip <code>.7z</code> extension file using the following command on linux </p>
+<pre><code class="language-sh">7za x &lt;file.7z&gt;
 
 </code></pre>
 
@@ -153,10 +153,13 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="../git/git-delete-history.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="../linux/bluetooth.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
+                                                    <a rel="next" href="../vim/file-save.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
                         <div style="clear: both"></div>
                     </nav>
@@ -164,10 +167,13 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="../git/git-delete-history.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="../linux/bluetooth.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
+                                    <a rel="next" href="../vim/file-save.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                             </nav>
 
         </div>
