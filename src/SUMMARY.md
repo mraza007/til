@@ -13,7 +13,7 @@
 7. [Killing port on Linux](./linux/kill-port.md)
 8. [Un Chmod](./linux/unchmod.md)
 10. [Enable Bluetooth on Linux](./linux/bluetooth.md) 
-
+11. [Unzip files on Linux](./linux/unzip.md)
 
 
 # Vim
